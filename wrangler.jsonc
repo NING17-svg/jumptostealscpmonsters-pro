@@ -9,7 +9,7 @@
   },
   "vars": {
     "NEXT_PUBLIC_SITE_URL": "https://jumptostealscpmonsters.pro",
-    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "",
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "G-11B1T7CV97",
     "NEXT_PUBLIC_BING_SITE_AUTH_CODE": ""
   }
 }
