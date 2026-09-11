@@ -24,14 +24,14 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: "Template Game Guide",
-  brandMark: "GG",
-  gameName: "Template Game",
-  domain: "example.com",
-  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://example.com").replace(/\/$/, ""),
+  name: "Jump To Steal SCP Monsters! Guide",
+  brandMark: "JTS",
+  gameName: "Jump To Steal SCP Monsters!",
+  domain: "jumptostealscpmonsters.pro",
+  baseUrl: (process.env.NEXT_PUBLIC_SITE_URL || "https://jumptostealscpmonsters.pro").replace(/\/$/, ""),
   description:
-    "A neutral game guide hub template for launch pages, wiki notes, guides, release information, and FAQs.",
-  tagline: "Guides, wiki notes, release info, and launch FAQs in one clean hub.",
+    "An unofficial English-language reference hub for Jump To Steal SCP Monsters! on Roblox (Universe 10683945170): active codes, SCP monster roster, jump-to-steal routes, tier comparison, and updates.",
+  tagline: "Jump To Steal SCP Monsters! codes, SCP monster roster, jump-to-steal routes, and patch notes — all dated to 2026-09-11.",
   primaryLocale: "en-US",
   locales: [
     {
@@ -53,16 +53,29 @@ export const site: SiteConfig = {
       },
     },
   ],
-  author: "Template Game Guide",
+  author: "Jump To Steal SCP Monsters! Guide",
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "",
   bingSiteAuthCode: process.env.NEXT_PUBLIC_BING_SITE_AUTH_CODE || "",
   officialSources: [
     {
-      label: "Official website",
-      href: "https://example.com",
-      description: "Replace this with the game publisher or developer website.",
+      label: "Jump To Steal SCP Monsters! on Roblox",
+      href: "https://www.roblox.com/games/123724279728430",
+      description:
+        "Official Roblox game page for Jump To Steal SCP Monsters! (Universe 10683945170, Creator Group Code&Bricks) with the live experience description and current stats.",
+    },
+    {
+      label: "Roblox Games API — Universe 10683945170",
+      href: "https://games.roblox.com/v1/games?universeIds=10683945170",
+      description:
+        "Official Roblox Games API multi-get endpoint for Universe 10683945170, exposing creation and update timestamps, visits, favorites, and player count snapshots.",
+    },
+    {
+      label: "Roblox Creator Groups directory",
+      href: "https://www.roblox.com/groups",
+      description:
+        "Official Roblox creator groups directory where Creator Group Code&Bricks publishes Jump To Steal SCP Monsters!.",
     },
   ],
   disclaimer:
-    "This is an unofficial fan guide template. Replace placeholder facts with official sources before launch.",
+    "Jump To Steal SCP Monsters! is a brand-new Roblox Universe (created 2026-08-11 by Creator Group Code&Bricks). This site is an unofficial English-language reference hub; current-game facts come from the official Roblox game page, the Roblox Games API metadata for Universe 10683945170, and the Code&Bricks verified social channels. Any SCP monster name, jump-to-steal route, rarity tier assignment, or redemption code that is not present in those sources is left as \"Not announced as of 2026-09-11\" rather than filled from community speculation or older SCP-themed Roblox titles.",
 };

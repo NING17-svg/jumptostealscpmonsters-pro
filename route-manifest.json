@@ -1,0 +1,122 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "jump-to-steal-scp-monsters-codes",
+    "translationKey": "jump-to-steal-scp-monsters-codes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/codes",
+    "alternates": {
+      "en-US": "/codes"
+    }
+  },
+  {
+    "id": "contact",
+    "translationKey": "contact",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/contact",
+    "alternates": {
+      "en-US": "/contact"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "jump-to-steal-scp-monsters-how-to-play",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/how-to-play",
+    "alternates": {
+      "en-US": "/how-to-play"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "jump-to-steal-scp-monsters-monsters",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/monsters",
+    "alternates": {
+      "en-US": "/monsters"
+    }
+  },
+  {
+    "id": "privacy-policy",
+    "translationKey": "privacy-policy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/privacy-policy",
+    "alternates": {
+      "en-US": "/privacy-policy"
+    }
+  },
+  {
+    "id": "jump-to-steal-scp-monsters-routes",
+    "translationKey": "jump-to-steal-scp-monsters-routes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/routes",
+    "alternates": {
+      "en-US": "/routes"
+    }
+  },
+  {
+    "id": "terms",
+    "translationKey": "terms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/terms",
+    "alternates": {
+      "en-US": "/terms"
+    }
+  },
+  {
+    "id": "jump-to-steal-scp-monsters-tier-list",
+    "translationKey": "jump-to-steal-scp-monsters-tier-list",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/tier-list",
+    "alternates": {
+      "en-US": "/tier-list"
+    }
+  },
+  {
+    "id": "jump-to-steal-scp-monsters-updates",
+    "translationKey": "jump-to-steal-scp-monsters-updates",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/updates",
+    "alternates": {
+      "en-US": "/updates"
+    }
+  }
+]
