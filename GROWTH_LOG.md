@@ -24,6 +24,14 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Entity changed: Generic entity Hubs/details now render source links, relationships, and optional registered local images from one base fact package.
 - Verification: Typecheck, template validation, content validation, rendered SEO validation, route-manifest generation, and multilingual entity fixtures.
 
+### 2026-09-29 - Adsterra six units integrated
+
+- Task: Replace the six empty Adsterra placeholders with real codes collected from the Adsterra publisher dashboard so the site can serve ads on launch.
+- Files changed: `src/data/ads.ts`.
+- URLs affected: None; ad units render inside existing page containers without changing routes.
+- Ad baseline: Native Banner, Banner 728x90, Banner 468x60, Banner 320x50, Banner 160x600, and Smartlink values are populated; component placement is unchanged.
+- Verification: `npm run verify` (typecheck, lint, template/content/indexnow/build/SEO validation).
+
 ### YYYY-MM-DD - Template baseline initialized
 
 - Task: Create the initial generated guide-site baseline.
