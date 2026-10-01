@@ -6,7 +6,13 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
-## Change Log
+### 2026-10-01 - Source rule labels renamed; the batch repair confirmed live
+
+- Task: Finish the render-quality pass on this site and confirm the earlier repair commit is the one serving traffic.
+- Copy changed: Four Key Facts across `/codes` and `/updates` were labelled "Source rule". That is the authoring pipeline's name for its own sourcing policy; the value beside it -- the official Roblox game page plus the Code&Bricks social channels -- is a real provenance fact a reader can act on, so only the label changes, to "Primary sources". No value is altered.
+- Confirmed: The earlier repair commit `15a8d1d` is on `origin/main` and is what the live site is serving. The render-quality audit re-run against the current data reports 0 findings across all 18 pages, and a read of the live site at `https://jumptostealscpmonsters.pro` returns 200 with 0 findings on all 11 routes.
+- URLs affected: None. No title, H1, canonical, page type, keyword, CTA or internal-link role changed, so `CONTENT_INDEX.md` is not revised.
+- Verification: `npm run verify` (typecheck, lint, template, content, IndexNow, static export, rendered SEO for 12 pages / 12 sitemap URLs / 12 manifest routes) passes and a sweep of the exported HTML finds no pipeline label and no unrendered Markdown link.
 
 ### 2026-10-01 - Public page render-quality repair
 

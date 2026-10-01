@@ -42,7 +42,7 @@ export const codesPage: PageContent = {
       "value": "In-game Codes button, case-sensitive"
     },
     {
-      "label": "Source rule",
+      "label": "Primary sources",
       "value": "Official Roblox game page + Code&Bricks social"
     }
   ],
@@ -861,7 +861,7 @@ export const updatesPage: PageContent = {
       "value": "Recent (Roblox Games API)"
     },
     {
-      "label": "Source rule",
+      "label": "Primary sources",
       "value": "Official game page + Code&Bricks social"
     }
   ],
@@ -973,7 +973,7 @@ export const fixedPages: PageContent[] = [
         "value": "In-game Codes button, case-sensitive"
       },
       {
-        "label": "Source rule",
+        "label": "Primary sources",
         "value": "Official Roblox game page + Code&Bricks social"
       }
     ],
@@ -1787,7 +1787,7 @@ export const fixedPages: PageContent[] = [
         "value": "Recent (Roblox Games API)"
       },
       {
-        "label": "Source rule",
+        "label": "Primary sources",
         "value": "Official game page + Code&Bricks social"
       }
     ],
