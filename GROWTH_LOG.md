@@ -6,37 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
-### 2026-08-12 - Static discovery and review freshness baseline added
+## Change Log
 
-- Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.
-- Files changed: Header/search components, content helpers, locale UI labels, homepage/page hero rendering, manifest/favicon metadata, Next.js security headers, and deterministic validators.
-- URLs affected: No existing URLs changed; search results use the final route manifest URLs and recent updates use existing indexable pages.
-- SEO/GEO changed: Last reviewed dates are public on every page; the homepage surfaces recent non-trust content by deterministic `lastReviewed` order; locale search never falls back across locales. Search indexes are emitted as per-locale force-static resources and lazy-loaded so full-site index data is not repeated in every page payload.
-- Browser baseline: Neutral SVG favicon, web manifest, `X-Content-Type-Options`, `Referrer-Policy`, and `X-Frame-Options` are wired without adding a restrictive CSP.
-- Verification: Typecheck, lint, template/content/SEO validation, and full verify are required before launch.
+### 2026-10-01 - Public page render-quality repair
 
-### 2026-07-21 - V3 locale and entity routing added
+- Task: Repair the homepage and inner pages so the first screen carries a positioning line, key facts and priority entry points, and so authoring-pipeline artifacts never reach a public page.
+- Defects found: placeholder_module (4 finding(s)) across 12 page(s).
+- Files changed: `src/data/pages/*.ts` and `src/data/faq.ts` (fold and module data), `src/components/content/ModuleRenderer.tsx` (prose body now renders Markdown), `src/components/pages/ContentPage.tsx` (Quick Answer renders inline Markdown), `src/lib/markdown.tsx` (new minimal Markdown-to-React renderer, including tables), `src/styles/modules.css` (prose body and table rules), `scripts/validate-render-integrity.ts` (new regression), `package.json` (new `validate:render` step in the `verify` chain).
+- URLs affected: None. Titles, H1s, canonicals, CTAs, page types and internal-link roles are unchanged, so `CONTENT_INDEX.md` is not revised.
+- SEO/GEO changed: FAQ entries that previously existed only as a Markdown module are now real entries in `src/data/faq.ts` and render through the accessible FAQ block, so FAQPage schema coverage is no longer limited to the pre-existing entries. `hero.subtitle` is now a positioning line and `quickAnswer` is the concise answer, so the fold is a summary rather than a duplicate of the article.
+- Copy changed: Reader copy no longer refers to the build-now brief, the game-check brief, the research cut-off date or the source-tier labels. Game facts, URLs, keyword intent, ad units and analytics are unchanged.
+- Verification: `npm run verify` (typecheck, lint, template, content, render integrity, IndexNow tests, static export, rendered SEO) passes; a full-text scan of every exported page finds no raw heading markers, raw Markdown links, tables or bold markers, pipeline headings, research metadata or literal question/answer labels; a content-conservation check against the previous commit confirms no reader copy, page identity or SEO field was lost.
 
-- Task: Upgrade the shared template for configuration-driven locale routes and programmatic entity pages.
-- Files changed: Site/page/entity types, locale and entity generators, dynamic routes, metadata, sitemap, validators, and template documentation.
-- URLs affected: Existing primary-locale URLs retain their paths; additional locale and entity routes are generated from configuration.
-- SEO changed: Canonical, hreflang, x-default, Open Graph locale, multilingual sitemap alternates, and final route-manifest validation are now data-driven.
-- Entity changed: Generic entity Hubs/details now render source links, relationships, and optional registered local images from one base fact package.
-- Verification: Typecheck, template validation, content validation, rendered SEO validation, route-manifest generation, and multilingual entity fixtures.
-
-### 2026-09-29 - Adsterra six units integrated
-
-- Task: Replace the six empty Adsterra placeholders with real codes collected from the Adsterra publisher dashboard so the site can serve ads on launch.
-- Files changed: `src/data/ads.ts`.
-- URLs affected: None; ad units render inside existing page containers without changing routes.
-- Ad baseline: Native Banner, Banner 728x90, Banner 468x60, Banner 320x50, Banner 160x600, and Smartlink values are populated; component placement is unchanged.
-- Verification: `npm run verify` (typecheck, lint, template/content/indexnow/build/SEO validation).
-
-### YYYY-MM-DD - Template baseline initialized
-
-- Task: Create the initial generated guide-site baseline.
-- Files changed: Template project files.
-- URLs affected: `/`, `/wiki`, `/guides`, `/release-date`, `/faq`, `/about`, `/contact`, `/privacy-policy`, `/terms`.
-- Content changed: Neutral placeholder content only.
-- Ad baseline: Fixed Adsterra-ready modules are present and disabled; no ad markup or request is emitted.
-- Follow-up: Replace this entry with a real launch/configuration entry when the one-click builder fills the site for a specific game.
